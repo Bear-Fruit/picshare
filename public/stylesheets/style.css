@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body{
+  background-color: #D8BF97;
+  background-color: #DEC6A0;
+  background: radial-gradient(#d1af7a, #caa467);
+}
+.spacer{
+  margin-top: 50px;
+}
+.logo-text{
+  font-size: 80px;
+  font-family: Comfortaa, helvetica, arial, sans-serif;
+  font-weight: 800;
+}
+.title-text{
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+}
+.subtitle-text{
+  font-size: 20px;
+  color:#eee2cf;
+}
+.btn-theme{
+  background-color: #584a32 !important;
+  color: #DEC6A0 !important;
+  font-weight: 700 !important;
+
+}
+.btn-theme:hover{
+  background-color: #584a32ce !important;
+  color: white;
+}

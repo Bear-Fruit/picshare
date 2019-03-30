@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  div(class="spacer")
+  div(class="container")
+    div(class="row")
+      div(class="col-2")
+      div(class="col-8")
+        h1(class="logo-text text-center") PicShare
+        div(class="row")
+          div(class="col-12 text-center")
+            p(class="title-text") Share your pictures
+            p(class="subtitle-text") Upload your image here and share a downloadable link with anyone   
+        div(class="row")
+          div(class="col-12 ")
+            form(action="/img/upload" enctype="multipart/form-data" method="post")
+              div(class="row")
+                div(class="col-10 ")
+                  input(type="file" name="filestring" class="btn btn-theme" style="width:90% !important;")
+                  //input(type="hidden" name="out" value="i" class="btn btn-theme" style="width:90% !important;")
+                div(class="col-2 ")
+                  input(type="submit" value="upload" class="btn btn-theme" )
+        div(class="spacer")
+        if !(imgString === undefined)
+          ul
+            for error in errors
+              li!= error.msg
+          div(class="row")
+            div(class="col-12 ")
+              div(class="input-group mb-3")
+                input(type="text" class="form-control" value="" + imgString  id="imglink" aria-label="Username" aria-describedby="basic-addon1")
+                div(class="input-group-prepend" type="button" onclick="myFunction()")
+                  span(class="input-group-text" id="basic-addon1" ) copy link 
+      div(class="col-2")
+        
+         
+  
